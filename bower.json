@@ -1,0 +1,29 @@
+{
+  "name": "egen-fe-challenge",
+  "description": "Identify Credit Card Issuing Network",
+  "version": "0.0.1",
+  "main": [
+    "index.html",
+    "cclogo.css",
+    "js/app.js"
+  ],
+  "keywords": [
+    "creditcard",
+    "angularjs"
+  ],
+  "authors": [
+    "Haneesha Muddasani"
+  ],
+  "homepage": "https://github.com/haneesha1292/egen-fe-challenge",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "^1.5.8",
+    "angular": "^1.5.8"
+  }
+}

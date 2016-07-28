@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Identify Credit Card</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cclogo.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body ng-app="ccApp">
+
+	<div class="credit_card">
+	 	<div class="identify_cc">
+	 		<div class="cc_head">
+	 			<p>Identify Credit Card Issuing Network</p>
+	 		</div>
+	 		<div class="cc_identifiers">
+		 		<p>Can identify:</p>
+		 		<span class="card_type visa"></span>
+		 		<span class="card_type electron"></span>
+		 		<span class="card_type discover"></span>
+		 		<span class="card_type amex"></span>
+		 		<span class="card_type solo"></span>
+		 		<span class="card_type maestro"></span>
+		 		<span class="card_type mastercard"></span>
+		 	</div> 
+		 	<div class="cc_input">
+		 		<p>Card Number:</p>
+	            <div class="input-group">
+	            	<i class="input-group-addon card_type default" ng-class="cardType"></i>
+	            	<input type="text" class="form-control input-lg" placeholder="Enter Card Number" ng-model="ccNumber">
+	            	<span style="display:none;">{{cardType = (ccNumber | identifycc) }}</span>
+	            </div>
+		 	</div>
+	 	</div>
+	</div>
+   
+    <!-- JavaScripts --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

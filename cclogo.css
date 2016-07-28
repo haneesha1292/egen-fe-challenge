@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+.credit_card{
+  height: 100%;
+  min-width: 50%;
+}
+
+.identify_cc{
+	height: 100%;
+	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+  	justify-content: center;
+}
+.cc_head p{
+	font-size: 2.8em;
+}
+.cc_input{
+	margin-top: 30px;
+}
+.cc_identifiers{
+	margin-top: 30px;
+}
+.cc_identifiers span{
+	width: 62px;
+	height: 50px;
+	display: inline-block;
+}
+.card_type{
+	background-image: url("cardtype.jpg");
+	width: 62px;
+}
+.default{
+	background-position: -437px -294px;
+}
+.visa{
+	background-position: -138px -15px;
+}
+.amex{
+	background-position: -37px -15px;	
+}
+.mastercard{
+	background-position: 113px -15px;	
+}
+.discover{
+	background-position: -237px -84px;
+}
+.maestro{
+	background-position: -37px -84px;
+}
+.solo{
+	background-position: 112px -86px;
+}
+.electron{
+	background-position: 212px -14px;
+}
